@@ -204,9 +204,13 @@ h6,
 }
 
 .page-header {
+    min-height: 420px; /* important for banners */
     padding-top: 12rem;
     padding-bottom: 6rem;
-    background: url(../img/header.jpeg) top left no-repeat;
+
+    background-image: url("../img/banner2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
 }
 
