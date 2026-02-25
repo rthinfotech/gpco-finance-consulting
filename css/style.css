@@ -269,7 +269,7 @@ p {
 
 /* Primary background */
 .fact-primary {
-    background: #355EFC;
+    background: #BFC9D1;
     color: #fff;
 }
 
@@ -321,7 +321,193 @@ p {
 }
 /* ===== Facts Section End ===== */
 
+/* Account Flow - Website Theme Colors */
+.account-flow-light {
+    background: #ffffff;
+}
+
+.account-flow-wrapper {
+    position: relative;
+    margin-top: 30px;
+}
+
+/* Connector line using primary gradient */
+.flow-line {
+    position: absolute;
+    top: 35px;
+    left: 6%;
+    right: 6%;
+    height: 2px;
+    background: linear-gradient(90deg, #06A3DA, #091E3E, #06A3DA);
+    z-index: 0;
+}
+
+/* Step container */
+.flow-step {
+    position: relative;
+    z-index: 1;
+}
+
+/* Icon circle */
+.flow-icon {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #06A3DA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #091E3E;
+    transition: all 0.4s ease;
+}
+
+/* Hover effect */
+.flow-step:hover .flow-icon {
+    background: linear-gradient(135deg, #06A3DA, #091E3E);
+    color: #ffffff;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(6, 163, 218, 0.35);
+}
+
+/* Text */
+.flow-step h6 {
+    margin-top: 14px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #091E3E;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+    .flow-line {
+        display: none;
+    }
+}
+
+/* ================================
+   Account Architecture Section
+================================ */
+
+.account-architecture-v4 {
+    background: #f4f9ff;
+}
+
+/* Card */
+.variant-card-v4 {
+    background: #ffffff;
+    padding: 32px 26px;
+    border-radius: 12px;
+    text-align: center;
+    height: 100%;
+    border: 1px solid rgba(6,163,218,0.15);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+}
+
+/* Hover */
+.variant-card-v4:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(6,163,218,0.25);
+}
+
+/* Code Badge */
+.variant-code {
+    display: inline-block;
+    background: linear-gradient(135deg, #06A3DA, #091E3E);
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* Title */
+.variant-card-v4 h5 {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #091E3E;
+}
+
+/* Sections */
+.variant-section {
+    margin-top: 14px;
+}
+
+/* Section label */
+.variant-section span {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #06A3DA;
+    margin-bottom: 4px;
+}
+
+/* Normal text */
+.variant-section p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.6;
+    color: #091E3E;
+}
+
+/* ================================
+   Key Characteristics Highlight
+================================ */
+
+.variant-section.key-block {
+    margin-top: 18px;
+    padding: 14px 14px;
+    background: rgba(6, 163, 218, 0.06);
+    border: 1px solid rgba(6, 163, 218, 0.25);
+    border-radius: 8px;
+}
+
+/* Bullet item */
+.variant-section.key-block ul li {
+    position: relative;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #091E3E;
+    font-weight: 500;
+}
+
+/* Bottom Note */
+.variant-note {
+    max-width: 900px;
+    margin: auto;
+    font-weight: 500;
+    font-size: 15px;
+    color: #091E3E;
+    line-height: 1.6;
+}
+
+/* Account Architecture Section end  */
+
+
+
+
 /*Framerwork section start */
+
+/* Fix image stretch / double rendering */
+.service-img-wrapper {
+    height: 450px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.service-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .section-title {
     font-size: 36px;
@@ -764,6 +950,482 @@ p {
 
 /* FAQ Section End */
 
+/*=============================================Client Journey start=============================================*/
+/* ===============================
+   Client Journey Box Layout
+================================ */
+
+.journey-section {
+    background: #f4f9ff;
+    padding: 60px 0;
+}
+
+/* Centered premium box */
+.journey-box {
+    background: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 45px 50px;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Timeline vertical line */
+.journey-timeline {
+    position: relative;
+    padding-left: 60px;
+    border-left: 2px solid #06A3DA;
+}
+
+/* Step card */
+.journey-item {
+    position: relative;
+    margin-bottom: 35px;
+    padding: 22px 25px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.journey-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(6, 163, 218, 0.12);
+}
+
+/* ===============================
+   Icon Circle (Replaces Dot)
+================================ */
+
+.journey-icon {
+    position: absolute;
+    left: -72px;
+    top: 22px;
+    width: 38px;
+    height: 38px;
+    background: #ffffff;
+    border: 2px solid #06A3DA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #06A3DA;
+    font-size: 15px;
+    box-shadow: 0 0 0 4px #f4f9ff;
+    transition: all 0.3s ease;
+}
+
+/* Icon hover effect */
+.journey-item:hover .journey-icon {
+    background: linear-gradient(135deg, #06A3DA, #091E3E);
+    color: #ffffff;
+    border-color: transparent;
+}
+
+/* Title */
+.journey-item h5 {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #091E3E;
+}
+
+/* Paragraph spacing */
+.journey-item p {
+    margin-bottom: 10px;
+}
+
+/* Bullet list */
+.journey-item ul {
+    padding-left: 18px;
+    margin-bottom: 0;
+}
+
+/* Prestige warning */
+.journey-warning {
+    color: #d9534f;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* ===============================
+   Responsive
+================================ */
+
+@media (max-width: 991px) {
+    .journey-box {
+        max-width: 100%;
+        padding: 35px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .journey-timeline {
+        padding-left: 40px;
+    }
+
+    .journey-icon {
+        left: -52px;
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .journey-box {
+        padding: 25px 20px;
+    }
+}
+/*Timeline Section End */
+
+/* ===============================
+   Client Segmentation (White Section)
+================================ */
+
+.client-seg-section {
+    background: #ffffff;
+}
+
+/* Card */
+.client-card {
+    background: #ffffff;
+    padding: 30px 28px;
+    border-radius: 10px;
+    height: 100%;
+    border: 1px solid rgba(6,163,218,0.15);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.client-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(6,163,218,0.12);
+}
+
+/* Icon circle */
+.client-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #06A3DA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #06A3DA;
+    font-size: 18px;
+    margin-bottom: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Icon hover */
+.client-card:hover .client-icon {
+    background: linear-gradient(135deg, #06A3DA, #091E3E);
+    color: #ffffff;
+    border-color: transparent;
+}
+
+/* Title */
+.client-card h5 {
+    font-weight: 600;
+    color: #091E3E;
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .client-card {
+        padding: 25px 22px;
+    }
+}
+/* ===============================
+   Client Segmentation Section end
+================================ */
+
+/* ===============================
+   Controlled Access + CTA Section
+================================ */
+
+.access-cta-section {
+    background: #ffffff;
+}
+
+/* Centered combined box */
+.access-cta-box {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 55px 60px;
+    border-radius: 14px;
+    background: #f4f9ff;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+}
+
+/* Divider between notice and CTA */
+.access-divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(135deg, #06A3DA, #091E3E);
+    margin: 35px auto;
+    border-radius: 2px;
+}
+
+/* Titles */
+.access-cta-box h2,
+.access-cta-box h3 {
+    font-weight: 600;
+    color: #091E3E;
+}
+
+/* Text */
+.access-cta-box p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* CTA Button tweak (optional) */
+.access-cta-box .btn-primary {
+    background: linear-gradient(135deg, #06A3DA, #091E3E);
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .access-cta-box {
+        padding: 35px 25px;
+    }
+}
+
+/* ===============================
+   Controlled Access + CTA Section end
+================================ */
+
+
+/* ===============================
+   Premium Tier Pricing Section
+================================ */
+
+.tier-pricing-section {
+    background: #ffffff;
+}
+
+/* Card */
+.tier-price-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.35s ease;
+    position: relative;
+}
+
+/* Same Hover Effect for All Cards */
+.tier-price-card:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 20px 60px rgba(13,110,253,0.15),
+        0 0 0 2px rgba(13,110,253,0.08),
+        0 0 30px rgba(13,110,253,0.12);
+}
+
+/* Tier Title */
+.tier-code {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 6px;
+}
+
+.tier-price-card:hover .tier-code {
+    color: #0d6efd;
+}
+
+/* Blocks */
+.tier-block {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.tier-block span {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Lists */
+.tier-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tier-list li {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+    text-align: center;
+}
+
+/* Icons per point */
+.tier-block.focus i {
+    color: #ff7a00;
+    margin-top: 3px;
+}
+
+.tier-block.handling i {
+    color: #28a745;
+    margin-top: 3px;
+}
+
+/* Footer Note */
+.tier-note {
+    color: #6c757d;
+    font-size: 14px;
+}
+/* Client Tier Board end*/
+
+/* ================================
+Tier Methodology – Contained Box
+================================ */
+
+/* Outer container (creates narrow centered panel) */
+.tier-method-outer {
+    max-width: 1100px;        /* Controls section width */
+    margin: 0 auto;
+}
+
+/* Main wrapper */
+.tier-method-wrapper {
+    background: #ffffff;
+    padding: 50px 50px;
+    border-radius: 18px;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.06);
+    border: 1px solid #f2f2f2;
+}
+
+/* Header */
+.tier-method-header h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #0b1c39;
+    margin-bottom: 10px;
+}
+
+.tier-line {
+    width: 60px;
+    height: 3px;
+    background: #0d6efd;
+    margin-bottom: 18px;
+}
+
+.tier-method-header p {
+    max-width: 700px;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+
+/* Left Box */
+.tier-method-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+}
+
+.tier-method-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+}
+
+/* List */
+.tier-method-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tier-method-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: #495057;
+}
+
+.tier-method-list i {
+    color: #0d6efd;
+    font-size: 16px;
+    width: 22px;
+}
+
+/* CTA Box */
+.tier-cta-box {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.tier-cta-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(13,110,253,0.12);
+}
+
+.tier-cta-box h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0b1c39;
+}
+
+.tier-cta-box p {
+    color: #6c757d;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.tier-cta-btn {
+    background: #0d6efd;
+    color: #fff;
+    padding: 12px 26px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.tier-cta-btn:hover {
+    background: #0b5ed7;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(13,110,253,0.3);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .tier-method-wrapper {
+        padding: 30px 25px;
+    }
+}
+/* =================================
+Client tier Final CTA section end 
+================================= */
 
 /*** Spinner ***/
 #spinner {
