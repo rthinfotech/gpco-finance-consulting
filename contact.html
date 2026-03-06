@@ -29,6 +29,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Country code-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+
 </head>
 
 <body>
@@ -121,64 +125,108 @@
         </div>
     </div>
     <!-- Page Header End -->
+<!-- Contact Section Start -->
+<section class="contact-section py-5">
+    <div class="container">
+        <div class="row g-5 contact-row">
 
+            <!-- LEFT SIDE -->
+            <div class="col-lg-6">
 
-    <!-- Contact Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Contact</p>
-                    <h1 class="display-5 mb-4">Get Expert Offshore Banking & Compliance Support</h1>
-                    <h4 class="mb-4">Receive messages instantly from our team</h4>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
-                    <div class="position-relative rounded overflow-hidden h-100">
-                        <iframe class="position-relative w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                        frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
+                    Contact Us
+                </p>
+
+                <h1 class="display-6 mb-3">
+                    Request Confidential Consultation
+                </h1>
+
+                <p class="mb-4">
+                    Submit your details and our consultant will contact you for a confidential discussion regarding offshore banking and structuring solutions.
+                </p>
+
+                <form id="contactForm" class="row g-3 contact-form" novalidate>
+
+                    <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Full Name *">
+                        <small class="text-danger error" data-error="name"></small>
                     </div>
+
+                    <div class="col-md-6">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address *">
+                        <small class="text-danger error" data-error="email"></small>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input id="phone" type="tel" name="phone" class="form-control" placeholder="Phone Number *">
+                        <small class="text-danger error" data-error="phone"></small>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input id="whatsapp" type="tel" name="whatsapp" class="form-control" placeholder="WhatsApp Number *">
+                        <small class="text-danger error" data-error="whatsapp"></small>
+                    </div>
+
+                    <div class="col-md-6">
+                        <select name="enquiry" class="form-control">
+                            <option value="">Your Enquiries *</option>
+                            <option>Offshore Account Opening</option>
+                            <option>Wealth Structuring</option>
+                            <option>Corporate Banking</option>
+                            <option>Investment Advisory</option>
+                            <option>General Consultation</option>
+                        </select>
+                        <small class="text-danger error" data-error="enquiry"></small>
+                    </div>
+
+                    <div class="col-md-6">
+                        <select name="source" id="sourceSelect" class="form-control">
+                            <option value="">How did you know about us *</option>
+                            <option value="Google">Google</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Referral">Referral</option>
+                            <option value="Advertisement">Advertisement</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <small class="text-danger error" data-error="source"></small>
+                    </div>
+
+                    <!-- Referral Field -->
+                    <div class="col-md-6 d-none" id="referralField">
+                        <input type="text" name="referralName" class="form-control"
+                               placeholder="Referrer Name / Company">
+                        <small class="text-danger error" data-error="referralName"></small>
+                    </div>
+
+                    <div class="col-12">
+                        <textarea name="message" rows="4" class="form-control"
+                                  placeholder="Message (Optional)"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary px-5">
+                            Submit Request
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-lg-6 contact-img-col">
+                <div class="contact-image-wrapper">
+                    <img src="img/contact-section.png" class="contact-img" alt="Offshore Consultation">
                 </div>
             </div>
+
         </div>
     </div>
-    <!-- Contact End -->
+</section>
+<!-- Contact Section End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-light footer mt-5 py-3 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5 justify-content-between">
                 <div class="col-lg-3 col-md-6">
@@ -231,6 +279,147 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("contactForm");
+    const sourceSelect = document.getElementById("sourceSelect");
+    const referralField = document.getElementById("referralField");
+
+    /* Toast Function */
+    function showToast(message, type = "success") {
+        const toastEl = document.getElementById("formToast");
+        const toastMsg = document.getElementById("toastMessage");
+
+        toastMsg.textContent = message;
+        toastEl.classList.remove("bg-success", "bg-danger");
+        toastEl.classList.add(type === "success" ? "bg-success" : "bg-danger");
+
+        const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+        toast.show();
+    }
+
+    /* Phone Inputs */
+    const phoneInput = window.intlTelInput(document.querySelector("#phone"), {
+        separateDialCode: true,
+        preferredCountries: ["us","gb","ae","in","sg"],
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+    });
+
+    const whatsappInput = window.intlTelInput(document.querySelector("#whatsapp"), {
+        separateDialCode: true,
+        preferredCountries: ["us","gb","ae","in","sg"],
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+    });
+
+    /* Referral Toggle */
+    sourceSelect.addEventListener("change", function () {
+        if (this.value === "Referral") {
+            referralField.classList.remove("d-none");
+        } else {
+            referralField.classList.add("d-none");
+            form.referralName.value = "";
+        }
+    });
+
+    function setError(field, message) {
+        document.querySelector(`[data-error="${field}"]`).textContent = message;
+    }
+
+    function clearErrors() {
+        document.querySelectorAll(".error").forEach(e => e.textContent = "");
+    }
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        clearErrors();
+
+        let valid = true;
+
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const enquiry = form.enquiry.value;
+        const source = form.source.value;
+        const referralName = form.referralName.value.trim();
+
+        if (!name) {
+            setError("name", "Please enter full name");
+            valid = false;
+        }
+
+        if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+            setError("email", "Enter valid email");
+            valid = false;
+        }
+
+        if (!phoneInput.isValidNumber()) {
+            setError("phone", "Enter valid phone number (10 digits)");
+            valid = false;
+        }
+
+        if (!whatsappInput.isValidNumber()) {
+            setError("whatsapp", "Enter valid WhatsApp number (10 digits)");
+            valid = false;
+        }
+
+        if (!enquiry) {
+            setError("enquiry", "Select enquiry");
+            valid = false;
+        }
+
+        if (!source) {
+            setError("source", "Select source");
+            valid = false;
+        }
+
+        if (source === "Referral" && !referralName) {
+            setError("referralName", "Enter referrer name");
+            valid = false;
+        }
+
+        if (!valid) {
+            showToast("Please correct the highlighted fields", "error");
+            return;
+        }
+
+        const data = {
+            name,
+            email,
+            phone: phoneInput.getNumber(),
+            whatsapp: whatsappInput.getNumber(),
+            enquiry,
+            source,
+            referralName,
+            message: form.message.value.trim()
+        };
+
+        console.log("Form Data:", data);
+
+        showToast("Request submitted successfully", "success");
+
+        form.reset();
+        referralField.classList.add("d-none");
+    });
+
+});
+</script>
+
+<!-- Center Toast -->
+<div class="toast-container position-fixed top-50 start-50 translate-middle p-3" style="z-index:9999;">
+    <div id="formToast" class="toast text-white border-0">
+        <div class="d-flex">
+            <div class="toast-body" id="toastMessage"></div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
 </body>
 
 </html>

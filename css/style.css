@@ -1426,6 +1426,96 @@ Tier Methodology – Contained Box
 /* =================================
 Client tier Final CTA section end 
 ================================= */
+/* ===============================
+   Contact Section Start
+================================ */
+
+/* Make both columns equal height */
+.contact-row {
+    align-items: stretch;
+}
+
+/* Image column flex */
+.contact-img-col {
+    display: flex;
+}
+
+/* Wrapper fills column height (NO fixed height for desktop) */
+.contact-image-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/* Image fits wrapper */
+.contact-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ===============================
+   Responsive Image Heights
+================================ */
+
+/* Tablet */
+@media (max-width: 991px) {
+    .contact-img-col {
+        margin-top: 20px;
+    }
+
+    .contact-image-wrapper {
+        height: 420px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .contact-image-wrapper {
+        height: 280px;
+    }
+}
+
+/* ===============================
+   Error Text
+================================ */
+.error {
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+}
+
+/* ===============================
+   Contact Form Spacing
+================================ */
+
+/* Extra spacing between fields */
+.contact-form > div {
+    margin-bottom: 8px;
+}
+
+/* Premium input style */
+.contact-form .form-control,
+.contact-form select,
+.contact-form textarea {
+    padding: 14px 16px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+/* Intl-tel full width */
+.contact-form .iti {
+    width: 100%;
+}
+
+/* Button spacing */
+.contact-form button {
+    margin-top: 10px;
+}
+
+/* ===============================
+   Contact Section End
+================================ */
 
 /*** Spinner ***/
 #spinner {
