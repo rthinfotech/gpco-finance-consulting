@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -14,7 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -31,85 +33,84 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Country code-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
 
 
     <!-- Header Start -->
-<div class="container-fluid fixed-top bg-white px-0">
+    <div class="container-fluid fixed-top bg-white px-0">
 
-    <!-- Top Bar -->
-    <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
-    </div>
+        <!-- Top Bar -->
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+        </div>
 
-    <!-- Navbar -->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0">
+        <!-- Navbar -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light py-lg-0">
 
-            <!-- Logo -->
-            <a href="index.html" class="navbar-brand">
-                <h1 class="display-5 text-primary m-0">GPCO</h1>
-            </a>
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="display-5 text-primary m-0">GPCO</h1>
+                </a>
 
-            <!-- Mobile Toggle -->
-            <button
-                type="button"
-                class="navbar-toggler"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Mobile Toggle -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto py-4 py-lg-0">
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-4 py-lg-0">
 
-                    <a href="index.html" class="nav-item nav-link ">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
 
-                    <!-- Services Dropdown -->
-                    <div class="nav-item dropdown">
-                        <a
-                            href="#"
-                            class="nav-link dropdown-toggle"
-                            data-bs-toggle="dropdown">
-                            Services
-                        </a>
-                        <div class="dropdown-menu m-0">
-                            <a href="risk-management.html" class="dropdown-item">
-                                Risk Management
+                        <!-- Services Dropdown -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                Services
                             </a>
-                            <a href="offshore-account.html" class="dropdown-item">
-                                Offshore Account Opening
-                            </a>
-                            <a href="investment-advisory.html" class="dropdown-item">
-                                Investment Advisory
-                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="risk-management.html" class="dropdown-item">
+                                    Risk Management
+                                </a>
+                                <a href="offshore-account.html" class="dropdown-item">
+                                    Offshore Account Opening
+                                </a>
+                                <a href="investment-advisory.html" class="dropdown-item">
+                                    Investment Advisory
+                                </a>
+                            </div>
                         </div>
+
+                        <a href="jurisdiction.html" class="nav-item nav-link ">Jurisdiction</a>
+
+                        <a href="client-journey.html" class="nav-item nav-link ">Client Journey</a>
+
+                        <a href="client-tier.html" class="nav-item nav-link">Client Tier</a>
+
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+
                     </div>
-                    
-                    <a href="client-journey.html" class="nav-item nav-link ">Client Journey</a>
-
-                    <a href="client-tier.html" class="nav-item nav-link">Client Tier</a>
-
-                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
-
                 </div>
-            </div>
 
-        </nav>
+            </nav>
+        </div>
+
     </div>
-
-</div>
-<!-- Header End -->
+    <!-- Header End -->
 
 
     <!-- Page Header Start -->
@@ -125,104 +126,113 @@
         </div>
     </div>
     <!-- Page Header End -->
-<!-- Contact Section Start -->
-<section class="contact-section py-5">
-    <div class="container">
-        <div class="row g-5 contact-row">
 
-            <!-- LEFT SIDE -->
-            <div class="col-lg-6">
+    <!-- Contact Section Start -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row g-5 contact-row">
 
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
-                    Contact Us
-                </p>
+                <!-- LEFT SIDE -->
+                <div class="col-lg-6">
 
-                <h1 class="display-6 mb-3">
-                    Request Confidential Consultation
-                </h1>
+                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
+                        Contact Us
+                    </p>
 
-                <p class="mb-4">
-                    Submit your details and our consultant will contact you for a confidential discussion regarding offshore banking and structuring solutions.
-                </p>
+                    <h1 class="display-6 mb-3">
+                        Request Confidential Consultation
+                    </h1>
 
-                <form id="contactForm" class="row g-3 contact-form" novalidate>
+                    <p class="mb-4">
+                        Submit your details and our consultant will contact you for a confidential discussion regarding
+                        offshore banking and structuring solutions.
+                    </p>
 
-                    <div class="col-md-6">
-                        <input type="text" name="name" class="form-control" placeholder="Full Name *">
-                        <small class="text-danger error" data-error="name"></small>
-                    </div>
+                    <form id="contactForm" class="row g-3 contact-form" novalidate>
 
-                    <div class="col-md-6">
-                        <input type="email" name="email" class="form-control" placeholder="Email Address *">
-                        <small class="text-danger error" data-error="email"></small>
-                    </div>
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name *">
+                            <small class="text-danger error" data-error="name"></small>
+                        </div>
 
-                    <div class="col-md-6">
-                        <input id="phone" type="tel" name="phone" class="form-control" placeholder="Phone Number *">
-                        <small class="text-danger error" data-error="phone"></small>
-                    </div>
+                        <div class="col-md-6">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address *">
+                            <small class="text-danger error" data-error="email"></small>
+                        </div>
 
-                    <div class="col-md-6">
-                        <input id="whatsapp" type="tel" name="whatsapp" class="form-control" placeholder="WhatsApp Number *">
-                        <small class="text-danger error" data-error="whatsapp"></small>
-                    </div>
+                        <div class="col-md-6">
+                            <input id="phone" type="tel" name="phone" class="form-control" placeholder="Phone Number *">
+                            <small class="text-danger error" data-error="phone"></small>
+                        </div>
 
-                    <div class="col-md-6">
-                        <select name="enquiry" class="form-control">
-                            <option value="">Your Enquiries *</option>
-                            <option>Offshore Account Opening</option>
-                            <option>Wealth Structuring</option>
-                            <option>Corporate Banking</option>
-                            <option>Investment Advisory</option>
-                            <option>General Consultation</option>
-                        </select>
-                        <small class="text-danger error" data-error="enquiry"></small>
-                    </div>
+                        <div class="col-md-6">
+                            <input id="whatsapp" type="tel" name="whatsapp" class="form-control"
+                                placeholder="WhatsApp Number *">
+                            <small class="text-danger error" data-error="whatsapp"></small>
+                        </div>
 
-                    <div class="col-md-6">
-                        <select name="source" id="sourceSelect" class="form-control">
-                            <option value="">How did you know about us *</option>
-                            <option value="Google">Google</option>
-                            <option value="Social Media">Social Media</option>
-                            <option value="Referral">Referral</option>
-                            <option value="Advertisement">Advertisement</option>
-                            <option value="Other">Other</option>
-                        </select>
-                        <small class="text-danger error" data-error="source"></small>
-                    </div>
+                        <div class="col-md-6">
+                            <select name="enquiry" class="form-control">
+                                <option value="">Your Enquiries *</option>
+                                <option>Offshore Account Opening</option>
+                                <option>Wealth Structuring</option>
+                                <option>Corporate Banking</option>
+                                <option>Investment Advisory</option>
+                                <option>General Consultation</option>
+                            </select>
+                            <small class="text-danger error" data-error="enquiry"></small>
+                        </div>
 
-                    <!-- Referral Field -->
-                    <div class="col-md-6 d-none" id="referralField">
-                        <input type="text" name="referralName" class="form-control"
-                               placeholder="Referrer Name / Company">
-                        <small class="text-danger error" data-error="referralName"></small>
-                    </div>
+                        <div class="col-md-6">
+                            <select name="source" id="sourceSelect" class="form-control">
+                                <option value="">How did you know about us *</option>
+                                <option value="Google">Google</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Referral">Referral</option>
+                                <option value="Advertisement">Advertisement</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <small class="text-danger error" data-error="source"></small>
+                        </div>
 
-                    <div class="col-12">
-                        <textarea name="message" rows="4" class="form-control"
-                                  placeholder="Message (Optional)"></textarea>
-                    </div>
+                        <!-- Referral Field -->
+                        <div class="col-md-6 d-none" id="referralField">
+                            <input type="text" name="referralName" class="form-control"
+                                placeholder="Referrer Name / Company">
+                            <small class="text-danger error" data-error="referralName"></small>
+                        </div>
 
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary px-5">
-                            Submit Request
-                        </button>
-                    </div>
+                        <div class="col-12">
+                            <textarea name="message" rows="4" class="form-control"
+                                placeholder="Message (Optional)"></textarea>
+                        </div>
 
-                </form>
-            </div>
+                       <div class="col-12 mb-3">
+                                    <div class="g-recaptcha"
+                                    data-sitekey="6Lfwm4IsAAAAAEw-uSUwLQ2LT_cSHkQvFKx4_SIu">
+                                    </div>
+                                    </div>
 
-            <!-- RIGHT IMAGE -->
-            <div class="col-lg-6 contact-img-col">
-                <div class="contact-image-wrapper">
-                    <img src="img/contact-section.png" class="contact-img" alt="Offshore Consultation">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary px-5">
+                                Submit Request
+                            </button>
+                        </div>
+
+                    </form>
                 </div>
-            </div>
 
+                <!-- RIGHT IMAGE -->
+                <div class="col-lg-6 contact-img-col">
+                    <div class="contact-image-wrapper">
+                        <img src="img/contact-section.png" class="contact-img" alt="Offshore Consultation">
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-</section>
-<!-- Contact Section End -->
+    </section>
+    <!-- Contact Section End -->
 
 
     <!-- Footer Start -->
@@ -266,7 +276,8 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -280,145 +291,218 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
 
+    <!-- Center Toast -->
+    <div class="toast-container position-fixed top-50 start-50 translate-middle p-3" style="z-index:9999;">
+        <div id="formToast" class="toast text-white border-0">
+            <div class="d-flex">
+                <div class="toast-body" id="toastMessage"></div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
 <script>
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.getElementById("contactForm");
     const sourceSelect = document.getElementById("sourceSelect");
     const referralField = document.getElementById("referralField");
 
-    /* Toast Function */
+    /* ================= TOAST FUNCTION ================= */
+
     function showToast(message, type = "success") {
+
         const toastEl = document.getElementById("formToast");
         const toastMsg = document.getElementById("toastMessage");
 
         toastMsg.textContent = message;
-        toastEl.classList.remove("bg-success", "bg-danger");
+
+        toastEl.classList.remove("bg-success","bg-danger");
         toastEl.classList.add(type === "success" ? "bg-success" : "bg-danger");
 
-        const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+        const toast = new bootstrap.Toast(toastEl,{delay:3000});
         toast.show();
     }
 
-    /* Phone Inputs */
-    const phoneInput = window.intlTelInput(document.querySelector("#phone"), {
-        separateDialCode: true,
-        preferredCountries: ["us","gb","ae","in","sg"],
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+    /* ================= PHONE INPUT ================= */
+
+    const phoneInput = window.intlTelInput(document.querySelector("#phone"),{
+        separateDialCode:true,
+        preferredCountries:["us","gb","ae","in","sg"],
+        utilsScript:"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
     });
 
-    const whatsappInput = window.intlTelInput(document.querySelector("#whatsapp"), {
-        separateDialCode: true,
-        preferredCountries: ["us","gb","ae","in","sg"],
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+    const whatsappInput = window.intlTelInput(document.querySelector("#whatsapp"),{
+        separateDialCode:true,
+        preferredCountries:["us","gb","ae","in","sg"],
+        utilsScript:"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
     });
 
-    /* Referral Toggle */
-    sourceSelect.addEventListener("change", function () {
-        if (this.value === "Referral") {
+    /* ================= REFERRAL TOGGLE ================= */
+
+    sourceSelect.addEventListener("change",function(){
+
+        if(this.value==="Referral"){
             referralField.classList.remove("d-none");
-        } else {
+        }else{
             referralField.classList.add("d-none");
-            form.referralName.value = "";
+            form.referralName.value="";
         }
+
     });
 
-    function setError(field, message) {
-        document.querySelector(`[data-error="${field}"]`).textContent = message;
+    /* ================= ERROR FUNCTIONS ================= */
+
+    function setError(field,message){
+        document.querySelector(`[data-error="${field}"]`).textContent=message;
     }
 
-    function clearErrors() {
-        document.querySelectorAll(".error").forEach(e => e.textContent = "");
+    function clearErrors(){
+        document.querySelectorAll(".error").forEach(e=>e.textContent="");
     }
 
-    form.addEventListener("submit", function(e) {
+    /* ================= FORM SUBMIT ================= */
+
+    form.addEventListener("submit",async function(e){
+
         e.preventDefault();
         clearErrors();
 
-        let valid = true;
+        const submitBtn=form.querySelector("button[type='submit']");
+        submitBtn.disabled=true;
+        submitBtn.innerText="Submitting...";
 
-        const name = form.name.value.trim();
-        const email = form.email.value.trim();
-        const enquiry = form.enquiry.value;
-        const source = form.source.value;
-        const referralName = form.referralName.value.trim();
+        let valid=true;
 
-        if (!name) {
-            setError("name", "Please enter full name");
-            valid = false;
+        const name=form.name.value.trim();
+        const email=form.email.value.trim();
+        const enquiry=form.enquiry.value;
+        const source=form.source.value;
+        const referralName=form.referralName.value.trim();
+
+        if(!name){
+            setError("name","Please enter full name");
+            valid=false;
         }
 
-        if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
-            setError("email", "Enter valid email");
-            valid = false;
+        if(!email || !/^\S+@\S+\.\S+$/.test(email)){
+            setError("email","Enter valid email");
+            valid=false;
         }
 
-        if (!phoneInput.isValidNumber()) {
-            setError("phone", "Enter valid phone number (10 digits)");
-            valid = false;
+        if(!phoneInput.isValidNumber()){
+            setError("phone","Enter valid phone number");
+            valid=false;
         }
 
-        if (!whatsappInput.isValidNumber()) {
-            setError("whatsapp", "Enter valid WhatsApp number (10 digits)");
-            valid = false;
+        if(!whatsappInput.isValidNumber()){
+            setError("whatsapp","Enter valid WhatsApp number");
+            valid=false;
         }
 
-        if (!enquiry) {
-            setError("enquiry", "Select enquiry");
-            valid = false;
+        if(!enquiry){
+            setError("enquiry","Select enquiry");
+            valid=false;
         }
 
-        if (!source) {
-            setError("source", "Select source");
-            valid = false;
+        if(!source){
+            setError("source","Select source");
+            valid=false;
         }
 
-        if (source === "Referral" && !referralName) {
-            setError("referralName", "Enter referrer name");
-            valid = false;
+        if(source==="Referral" && !referralName){
+            setError("referralName","Enter referrer name");
+            valid=false;
         }
 
-        if (!valid) {
-            showToast("Please correct the highlighted fields", "error");
+        if(!valid){
+
+            showToast("Please correct the highlighted fields","error");
+
+            submitBtn.disabled=false;
+            submitBtn.innerText="Submit Request";
             return;
         }
 
-        const data = {
-            name,
-            email,
-            phone: phoneInput.getNumber(),
-            whatsapp: whatsappInput.getNumber(),
-            enquiry,
-            source,
-            referralName,
-            message: form.message.value.trim()
+        /* ================= GOOGLE CAPTCHA CHECK ================= */
+
+        const captchaToken = grecaptcha.getResponse();
+
+        if(!captchaToken){
+
+            showToast("Please verify that you are not a robot","error");
+
+            submitBtn.disabled=false;
+            submitBtn.innerText="Submit Request";
+            return;
+        }
+
+        /* ================= API PAYLOAD ================= */
+
+        const payload={
+
+            fullName:name,
+            email:email,
+            enquiries:enquiry,
+            sourceType:source,
+            referName:referralName,
+            phoneNumber:phoneInput.getNumber(),
+            whatsAppNumber:whatsappInput.getNumber(),
+            message:form.message.value.trim() || "Consultation request submitted.",
+            captchaToken:captchaToken
+
         };
 
-        console.log("Form Data:", data);
+        try{
 
-        showToast("Request submitted successfully", "success");
+            const response=await fetch("http://localhost:8080/api/contacts",{
 
-        form.reset();
-        referralField.classList.add("d-none");
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify(payload)
+
+            });
+
+            const result=await response.json();
+
+            if(response.ok && result.success){
+
+                showToast("Request submitted successfully !!","success");
+
+                form.reset();
+                referralField.classList.add("d-none");
+                grecaptcha.reset();
+
+            }else{
+
+                showToast(result.message || "Submission failed","error");
+                grecaptcha.reset();
+            }
+
+        }catch(error){
+
+            console.error(error);
+
+            showToast("Server error. Please try again later.","error");
+            grecaptcha.reset();
+        }
+
+        submitBtn.disabled=false;
+        submitBtn.innerText="Submit Request";
+
     });
 
 });
 </script>
 
-<!-- Center Toast -->
-<div class="toast-container position-fixed top-50 start-50 translate-middle p-3" style="z-index:9999;">
-    <div id="formToast" class="toast text-white border-0">
-        <div class="d-flex">
-            <div class="toast-body" id="toastMessage"></div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
-        </div>
-    </div>
-</div>
+    
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
 
 </body>
 

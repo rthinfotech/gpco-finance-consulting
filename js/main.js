@@ -80,3 +80,38 @@
     
 })(jQuery);
 
+
+/* Jurisdiction Tabs */
+
+const tabs = document.querySelectorAll(".jurisdiction-tabs .nav-link");
+const items = document.querySelectorAll(".jurisdiction-item");
+
+tabs.forEach(tab => {
+
+tab.addEventListener("click", function(){
+
+tabs.forEach(btn => btn.classList.remove("active"));
+this.classList.add("active");
+
+const filter = this.getAttribute("data-filter");
+
+items.forEach(item => {
+
+if(filter === "all"){
+item.style.display = "block";
+}
+else{
+if(item.classList.contains(filter)){
+item.style.display = "block";
+}
+else{
+item.style.display = "none";
+}
+}
+
+});
+
+});
+
+});
+

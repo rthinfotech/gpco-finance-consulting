@@ -1517,6 +1517,117 @@ Client tier Final CTA section end
    Contact Section End
 ================================ */
 
+/*================================
+        Jurisdiction section Start            
+================================*/
+
+/* Jurisdiction Section */
+
+.jurisdiction-tabs .nav-link{
+border-radius:50px;
+padding:10px 24px;
+margin:5px;
+background:#f4f6f8;
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+.jurisdiction-tabs .nav-link.active{
+background:#0d6efd;
+color:#fff;
+}
+
+.jurisdiction-card{
+background:#fff;
+padding:30px;
+border-radius:8px;
+border:1px solid #eee;
+transition:0.3s;
+height:100%;
+}
+
+.jurisdiction-card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.jurisdiction-card h4{
+margin-bottom:15px;
+font-size:20px;
+font-weight:600;
+}
+
+.jurisdiction-card ul{
+padding-left:18px;
+margin-bottom:15px;
+}
+
+.jurisdiction-card ul li{
+font-size:14px;
+margin-bottom:6px;
+}
+
+.jurisdiction-card a{
+font-weight:600;
+text-decoration:none;
+color:#0d6efd;
+}
+
+.jurisdiction-card{
+position:relative;
+height:260px;
+border-radius:10px;
+overflow:hidden;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:flex-end;
+transition:0.4s;
+}
+
+.jurisdiction-card:hover{
+transform:scale(1.05);
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+.jurisdiction-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+}
+
+.jurisdiction-content{
+position:relative;
+color:#fff;
+padding:25px;
+z-index:2;
+width:100%;
+}
+
+.jurisdiction-content h4{
+color:#fff;
+margin-bottom:10px;
+}
+
+.jurisdiction-content ul{
+padding-left:18px;
+margin-bottom:10px;
+}
+
+.jurisdiction-content a{
+color:#fff;
+font-weight:600;
+text-decoration:none;
+}
+
+/*================================
+        Jurisdiction section End            
+================================*/
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
