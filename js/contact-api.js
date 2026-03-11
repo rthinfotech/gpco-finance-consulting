@@ -7,6 +7,7 @@ const form = document.getElementById("contactForm");
 const submitBtn = form.querySelector("button[type='submit']");
 
 /* Disable submit button */
+
 submitBtn.disabled = true;
 submitBtn.innerText = "Submitting...";
 
